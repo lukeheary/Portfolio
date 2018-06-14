@@ -23,7 +23,6 @@
   padding-top: 30vh;
   color: #1E1E1E;
   font-size: calc(4vw + 4vh + 2vmin);
-;
   font-family: "Lucida Grande";
 
 }
@@ -33,9 +32,9 @@
   padding-top: 2vh;
   color: #1E1E1E;
   font-size: calc(0.5vw + 1vh + 1vmin);
-  font-weight: 400;
+  font-weight: lighter;
   font-family: "Helvetica";
-  line-height: 4vh;
+  line-height: 3.5vh;
 }
 
 /** ------------------- Top Bar ------------------- **/
@@ -98,7 +97,7 @@
 
 .about h1 {
   padding: 15vh 5vw 10vh 10vw;
-  font-size: 28px;
+  font-size: 22px;
   transform: skewY(4deg);
   font-weight: bold;
   font-family: "Lucida Grande";
@@ -134,7 +133,7 @@
 
 .experience {
   height: 90vh;
-  min-height: 600px;
+  min-height: 700px;
   width: 100vw;
   background-color: white;
   position: relative;
@@ -144,7 +143,7 @@
 
 .experience h1 {
   padding: 15vh 5vw 0 2vw;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   font-family: "Lucida Grande";
   color: black;
@@ -203,33 +202,21 @@
 .input::before {
   left: calc(-8vw + 10px);
 }
+
 .input::after {
   right: calc(-8vw + 10px);
 }
 
-.input span {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: visible;
-}
-.input span::before, .input span::after {
-  visibility: visible;
-  position: absolute;
-}
 .input .date {
   top: 0px;
-  transform: translateX(-120%) translateY(-150px);
+  transform: translateX(-124%) translateY(-150px);
   font-size: 14px;
 }
 .input .position {
   top: -80px;
   width: 140px;
   height: 90px;
-  transform: translateX(-65px) translateY(-80px) rotateZ(0deg);
+  transform: translateX(-66px) translateY(-85px) rotateZ(0deg);
   font-size: 12px;
   text-indent: -0px;
   text-align: center;
@@ -237,6 +224,7 @@
   margin-bottom: 80px;
 }
 .input .place {
+  padding-top: 8px;
   font-weight: lighter;
 }
 
