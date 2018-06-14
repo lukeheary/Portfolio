@@ -1,0 +1,258 @@
+
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: "Lucida Grande";
+
+}
+
+/** ------------------- Introduction ------------------- **/
+
+.intro {
+  height: 95vh;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+
+.intro h1 {
+  text-align: center;
+  padding-top: 30vh;
+  color: #1E1E1E;
+  font-size: calc(4vw + 4vh + 2vmin);
+;
+  font-family: "Lucida Grande";
+
+}
+
+.intro h2 {
+  text-align: center;
+  padding-top: 2vh;
+  color: #1E1E1E;
+  font-size: calc(0.5vw + 1vh + 1vmin);
+  font-weight: 400;
+  font-family: "Helvetica";
+  line-height: 4vh;
+}
+
+/** ------------------- Top Bar ------------------- **/
+
+.bar {
+  top: 2vw;
+  height: 50px;
+  /* margin: 5px auto;
+  left: 0; */
+  right: 2vw;
+  width: 40vw;
+  background-color: #EEEEEE;
+  z-index: 10;
+  position: fixed;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bar .item {
+  height: 30px;
+  width: 50px;
+  background-color: #EEEEEE;
+  display: inline-flex;
+  z-index: 15;
+  position: fixed;
+  position: relative;
+  display: flex;
+  margin: 10px auto;
+  left: 0;
+  right:0;
+  cursor: pointer;
+}
+
+.bar .item:hover {
+  color: #4F85C5;
+}
+
+.bar .item p {
+  padding-top: 8px;
+  font-family: "Lucida Grande";
+  font-size: 10px;
+}
+
+/** ------------------- About ------------------- **/
+
+.about {
+  height: 90vh;
+  min-height: 600px;
+  width: 100vw;
+  background: linear-gradient(to right, #4F85C5 , #32C4E2);
+  position: relative;
+  right: 0;
+  z-index: 5;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+  display: flex;
+
+}
+
+.about h1 {
+  padding: 15vh 5vw 10vh 10vw;
+  font-size: 28px;
+  transform: skewY(4deg);
+  font-weight: bold;
+  font-family: "Lucida Grande";
+  color: white;
+  text-align: right;
+  width: 25%;
+  margin: 10.5vh 0 30vh 4vw;
+}
+
+.about p {
+  width: 75%;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  font-family: "Helvetica";
+  line-height: 30px;
+  margin: 30vh 15vw 30vh 0;
+  transform: skewY(4deg);
+  font-weight: 400;
+}
+
+.about .arrow-down {
+  margin: 0 auto;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+}
+
+/** ------------------- Work Experience ------------------- **/
+
+.experience {
+  height: 90vh;
+  min-height: 600px;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  right: 0;
+  z-index: 5;
+}
+
+.experience h1 {
+  padding: 15vh 5vw 0 2vw;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Lucida Grande";
+  color: black;
+  width: 25%;
+  text-align: right;
+  margin: 10.5vh 0 0vh 4vw;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/** the bar **/
+.input::before, .input::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #EAEAEA;
+  width: 15vw;
+  height: 2px;
+  max-width: 150px;
+}
+
+.input-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 100px;
+  max-width: 1000px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 10vh;
+}
+
+.input {
+  width: 10px;
+  height: 10px;
+  background-color: #32C4E2;
+  position: relative;
+  border-radius: 50%;
+  text-align: left;
+}
+.input:hover {
+  cursor: pointer;
+}
+
+.input::before {
+  left: calc(-8vw + 10px);
+}
+.input::after {
+  right: calc(-8vw + 10px);
+}
+
+.input span {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+.input span::before, .input span::after {
+  visibility: visible;
+  position: absolute;
+}
+.input .date {
+  top: 0px;
+  transform: translateX(-120%) translateY(-150px);
+  font-size: 14px;
+}
+.input .position {
+  top: -80px;
+  width: 140px;
+  height: 90px;
+  transform: translateX(-65px) translateY(-80px) rotateZ(0deg);
+  font-size: 12px;
+  text-indent: -0px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.input .place {
+  font-weight: lighter;
+}
+
+/** ------------------- TBD ------------------- **/
+
+
+.programming {
+  height: 90vh;
+  min-height: 600px;
+  width: 100vw;
+  background: linear-gradient(to right, #F1F1F1 , #D3D2D2);
+  position: relative;
+  right: 0;
+  z-index: 5;
+  transform: skewY(4deg);
+  transform-origin: top left;
+  display: flex;
+
+}

@@ -1,0 +1,119 @@
+@media only screen and (max-width: 700px) {
+
+.bar {
+  top: 2vw;
+  height: 50px;
+  /* margin: 5px auto;
+  left: 0; */
+  right: 2vw;
+  width: 96vw;
+  background-color: #EEEEEE;
+  z-index: 10;
+  position: fixed;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about p {
+  padding: 6vh 5vw 0vh 5vw;
+  font-size: 15px;
+  font-weight: lighter;
+  transform: skewY(4deg);
+  color: white;
+  font-family: "Helvetica";
+  display: block;
+}
+
+
+.about {
+  display: block;
+  height: 110vh;
+}
+
+.about h1, .experience h1 {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10vh 0;
+}
+
+.about p {
+  margin: auto;
+  width: 85%;
+
+}
+
+}
+@media (max-width: 950px) {
+
+  .input::before, .input::after {
+}
+
+.input span::before {
+  content: attr(data-info);
+  top: -150px;
+  width: 60px;
+  height: 90px;
+  transform: translateX(-30px) rotateZ(0deg);
+  text-indent: -0px;
+}
+
+.about {
+  height: 800px;
+}
+
+@media (max-width: 700px) {
+  .flex-parent {
+    justify-content: initial;
+  }
+
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .input {
+    width: 60px;
+    height: 60px;
+    margin: 0 60px 50px;
+    margin-top: 50px;
+    background-color: #32C4E2;
+  }
+  .input::before, .input::after {
+    content: none;
+  }
+  .input span {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .input span::before {
+    top: calc(100% + 15px);
+    transform: translateX(-25%);
+    text-indent: 0;
+    text-align: center;
+    content: attr(data-info);
+    width: 110px;
+  }
+
+  .input span::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ECF0F1;
+  }
+
+  .description-flex-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    min-height: 950px;
+  }
+}
