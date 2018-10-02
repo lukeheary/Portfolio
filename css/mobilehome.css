@@ -1,123 +1,148 @@
 @media only screen and (max-width: 700px) {
 
 .bar {
-  top: 2vw;
+  top: 0.5vw;
   height: 50px;
-  /* margin: 5px auto;
-  left: 0; */
-  right: 2vw;
-  width: 96vw;
-  background-color: #EEEEEE;
+  left: 1vw;
+  width: 98vw;
+  margin: auto;
+  background-color: #F9F9F9;
   z-index: 10;
-  position: fixed;
   border-radius: 10px;
+  position: fixed;
   display: flex;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
-.about p {
-  padding: 6vh 5vw 0vh 5vw;
+.intro {
+  height: 85vh;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+
+}
+
+.intro h1 {
+  text-align: center;
+  padding-top: 30vh;
+  color: #1E1E1E;
+  font-size: 55px;
+  letter-spacing: 0px;
+  margin-left: 0;
+}
+
+.intro h2 {
+  text-align: center;
+  color: #1E1E1E;
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 3.5vh;
+  margin-left: 0;
+}
+
+.intro h3 {
+  text-align: center;
+  padding-top: 1vh;
+  color: #1E1E1E;
+  font-size: calc(0.5vw + 0.5vh + 1vmin);
+  font-weight: lighter;
+  line-height: 3.5vh;
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.intro img {
+  visibility: hidden;
+  width: 0px;
+  margin: 0;
+}
+
+.experience h1 {
+  padding: 10vh 0 0 0;
+  margin: 0vh 0 0vh 0vw;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.experience {
+  display: block;
+  min-height: 900px;
+
+}
+.experience .section {
+  margin-left: 8vw;
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  margin-top: 0vh;
+}
+
+.about {
+  display: block;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.about .section {
+  width: 100%;
+  display: block;
+  margin-top: 4vh;
+}
+
+.about h1 {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  padding: 10vh 0 0 0;
+}
+
+.about .section p {
+  margin: auto;
   font-size: 15px;
   font-weight: lighter;
-  transform: skewY(4deg);
   color: white;
   font-family: "Helvetica";
   display: block;
 }
 
 
-.about {
+.skills {
   display: block;
-  height: 110vh;
 }
 
-.about h1, .experience h1, .skills h1 {
+.skills .section {
+  margin-top: 4vh;
+  margin-left: 8vw;
+  width: 100%;
+}
+
+.skills h1 {
+  display: block;
   text-align: center;
   margin: auto;
-  width: 50%;
+  width: 100%;
+  font-size: 25px;
+
   padding: 10vh 0 0 0;
 }
 
-.about p {
-  margin: auto;
-  width: 85%;
-
 }
 
-}
+
 @media (max-width: 950px) {
 
-  .input::before, .input::after {
+.experience .section .job {
+  padding-top: 20px;
 }
 
-.input span::before {
-  content: attr(data-info);
-  top: -150px;
-  width: 60px;
-  height: 90px;
-  transform: translateX(-30px) rotateZ(0deg);
-  text-indent: -0px;
+.experience .section .job h4 {
+  font-weight: 100;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 35px;
 }
 
-.about {
-  height: 800px;
-}
-
-@media (max-width: 700px) {
-  .flex-parent {
-    justify-content: initial;
-  }
-
-  .input-flex-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 5vh;
-  }
-
-  .experience {
-    min-height: 800px;
-  }
-
-  .input {
-    width: 60px;
-    height: 60px;
-    margin: 0 60px 50px;
-    margin-top: 50px;
-    background-color: #32C4E2;
-  }
-  .input::before, .input::after {
-    content: none;
-  }
-  .input .date {
-    top: 0px;
-    transform: translateX(20%) translateY(-150px);
-    font-size: 14px;
-  }
-  .input .position {
-    top: -80px;
-    width: 140px;
-    height: 90px;
-    transform: translateX(-41px) translateY(70px) rotateZ(0deg);
-    font-size: 12px;
-    text-indent: -0px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 80px;
-  }
-  .input .place {
-    padding-top: 6px;
-    font-weight: lighter;
-  }
-
-  .description-flex-container {
-    margin-top: 30px;
-    text-align: center;
-  }
-}
-@media (max-width: 400px) {
-  body {
-    min-height: 950px;
-  }
 }

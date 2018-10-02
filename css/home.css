@@ -2,7 +2,7 @@
 * {
    margin: 0px;
    padding: 0px;
-   font-family: "Lucida Grande";
+   font-family: "Tahoma";
 
 }
 
@@ -14,82 +14,118 @@
   background-color: white;
   position: relative;
   z-index: 5;
-  border-bottom-left-radius: 50% 10%;
-  border-bottom-right-radius: 50% 10%;
 }
 
 .intro h1 {
-  text-align: center;
+  text-align: left;
   padding-top: 30vh;
+  letter-spacing: 0px;
   color: #1E1E1E;
-  font-size: calc(4vw + 3vh + 2vmin);
-  font-family: "Lucida Grande";
-
+  font-size: calc(4vw + 2vh + 2vmin);
+  font-family: "Tahoma";
+  margin-left: 18vw;
 }
 
 .intro h2 {
-  text-align: center;
+  text-align: left;
   padding-top: 2vh;
   color: #1E1E1E;
   font-size: calc(0.5vw + 0.5vh + 1vmin);
-  font-weight: lighter;
-  font-family: "Helvetica";
+  font-weight: bolder;
+  font-family: "Tahoma";
   line-height: 3.5vh;
+  margin-left: 18vw;
+}
+
+.intro h3 {
+  text-align: left;
+  padding-top: 1vh;
+  color: #1E1E1E;
+  font-size: calc(0.5vw + 0.5vh + 0.8vmin);
+  font-weight: lighter;
+  font-family: "Tahoma";
+  line-height: 3.5vh;
+  margin-left: 18vw;
+
+}
+
+.intro img {
+  height: 390px;
+  width: 300px;
+  border: 20px #F9F9F9 solid;
+  border-radius: 1000px;
+  index: 10;
+  position: relative;
+  margin-left: 65vw;
+  bottom: 36vh;
+  box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);  */
 }
 
 /** ------------------- Top Bar ------------------- **/
 
 .bar {
-  top: 2vw;
+  top: 0.5vw;
+  height: 50px;
+  width: 50vw;
+  margin: 0px 25vw;
+  background-color: #F9F9F9;
+  z-index: 10;
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);  */
+
+  /* top: 1vw;
   height: 50px;
   /* margin: 5px auto;
-  left: 0; */
-  right: 2vw;
-  width: 40vw;
-  background-color: #EEEEEE;
+  left: 0;
+  right: 1vw;
+  width: 50vw;
+  background-color: #F9F9F9;
   z-index: 10;
   position: fixed;
   border-radius: 10px;
   display: flex;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
+}
+
+.bar:hover {
+    -webkit-transform: scale(1.01);
+    transition: .2s;
 }
 
 .bar .item {
   height: 30px;
   width: 50px;
-  background-color: #EEEEEE;
+  background-color: #F9F9F9;
   display: inline-flex;
   z-index: 15;
-  position: fixed;
   position: relative;
   display: flex;
-  margin: 10px auto;
-  left: 0;
-  right:0;
+  margin: auto;
   cursor: pointer;
 }
 
 .bar .item:hover {
   color: #4F85C5;
+  transition: .2s;
 }
 
 .bar .item p {
   padding-top: 8px;
-  font-family: "Lucida Grande";
   font-size: 10px;
 }
 
 /** ------------------- About ------------------- **/
 
 .about {
-  height: 90vh;
-  min-height: 600px;
+  height: 100vh;
+  min-height: 800px;
   width: 100vw;
   background: linear-gradient(to right, #4F85C5 , #32C4E2);
   position: relative;
   right: 0;
   z-index: 5;
-  transform: skewY(-4deg);
   transform-origin: top left;
   display: flex;
 }
@@ -99,20 +135,17 @@
   height: 70%;
   margin-top: 25.5vh;
   display: flex;
-  transform: skewY(4deg);
 }
 
-
 .about h1 {
-  padding: 15vh 5vw 10vh 2vw;
+  padding: 20vh 5vw 10vh 2vw;
   margin: 10.5vh 0 0vh 4vw;
   font-size: 17px;
   font-weight: bold;
   color: white;
-  font-family: "Lucida Grande";
+  font-family: "Tahoma";
   width: 24.5%;
   text-align: right;
-  transform: skewY(4deg);
 }
 
 .about .section p {
@@ -158,7 +191,7 @@
   padding: 15vh 5vw 0 2vw;
   font-size: 17px;
   font-weight: bold;
-  font-family: "Lucida Grande";
+  font-family: "Tahoma";
   width: 25%;
   text-align: right;
   margin: 10.5vh 0 0vh 4vw;
@@ -170,7 +203,7 @@
 
 
 .experience {
-  height: 110vh;
+  height: 100vh;
   padding-top: 0px;
   min-height: 600px;
   width: 100vw;
@@ -186,7 +219,7 @@
   font-size: 17px;
   font-weight: bold;
   color: black;
-  font-family: "Lucida Grande";
+  font-family: "Tahoma";
   width: 24.5%;
   text-align: right;
 }
@@ -199,10 +232,15 @@
   flex-direction: column;
 }
 
+.experience .section .job:hover {
+  cursor: pointer;
+  transition: .2s;
+}
+
 .experience .section .job {
-  height: 200px;
+  height: 60px;
   width: 75%;
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
 }
 
 .experience .section .job h2 {
@@ -214,7 +252,7 @@
 
 .experience .section .job h3 {
   font-size: 14px;
-  padding-bottom: 76px;
+  margin-bottom: 76px;
   font-weight: 100;
   text-align: left;
 
@@ -231,7 +269,7 @@
 /** ------------------- Skills ------------------- **/
 
 .skills {
-  height: 110vh;
+  height: 100vh;
   padding-top: 0px;
   min-height: 600px;
   width: 100vw;
@@ -239,19 +277,16 @@
   right: 0;
   z-index: 5;
   display: flex;
-  transform: skewY(4deg);
 }
 
 .skills h1 {
-  padding: 15vh 5vw 10vh 2vw;
+  padding: 9vh 5vw 10vh 2vw;
   margin: 10.5vh 0 0vh 4vw;
   font-size: 17px;
   font-weight: bold;
   color: white;
-  font-family: "Lucida Grande";
   width: 24.5%;
   text-align: right;
-  transform: skewY(-4deg);
 }
 
 .skills .section {
@@ -260,14 +295,13 @@
   margin-top: 19vh;
   display: flex;
   flex-direction: column;
-  transform: skewY(-4deg);
   color: white;
 }
 
 .skills .section .skill {
   height: 100px;
   width: 75%;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .skills .section .skill h2 {
