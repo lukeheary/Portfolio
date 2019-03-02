@@ -1,9 +1,204 @@
+/** Desktop **/
 
 * {
    margin: 0px;
    padding: 0px;
    font-family: "Tahoma";
+}
 
+:root {
+  --logoBlue : #0098be;
+  --logoRed : #D94545;
+  --barGray : #F9F9F9;
+}
+
+
+/** MOBILE **/
+
+@media only screen and (max-width : 1000px) {
+
+
+  * {
+     margin: 0px;
+     padding: 0px;
+     font-family: "Helvetica";
+  }
+
+.intro {
+  height: 85vh;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.intro h1 {
+  text-align: center;
+  padding-top: 30vh;
+  color: #1E1E1E;
+  font-size: 55px;
+  letter-spacing: 0px;
+  font-family: "Helvetica";
+}
+
+.intro h2 {
+  text-align: center;
+  color: #1E1E1E;
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 3.5vh;
+  font-family: "Helvetica";
+  margin-top: 2vh;
+}
+
+.intro h3 {
+  text-align: center;
+  padding-top: 1vh;
+  color: #1E1E1E;
+  font-size: calc(0.5vw + 0.5vh + 1vmin);
+  font-weight: lighter;
+  line-height: 3.5vh;
+  font-size: 15px;
+}
+
+.experience h1 {
+  padding: 10vh 0 0 0;
+  margin: 0vh 0 0vh 0vw;
+  width: 100vw;
+  font-size: 25px;
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--logoBlue);
+}
+
+.experience h4 {
+  text-align: center;
+}
+
+.experience {
+  display: block;
+  margin-bottom: 50px;
+}
+.experience .section {
+  width: 100vw;
+  display: block;
+  flex-direction: column;
+  margin-top: 0vh;
+}
+
+.experience .section .job {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.about {
+  display: block;
+  background-color: var(--logoBlue);
+  padding-bottom: 50px;
+}
+
+.about .section {
+  width: 100vw;
+  display: flex;
+  margin-top: 4vh;
+}
+
+.about h1 {
+  text-align: center;
+  margin: auto;
+  width: 100vw;
+  font-size: 25px;
+  padding: 10vh 0 0 0;
+  color: white;
+}
+
+.about .section p {
+  margin: auto;
+  font-size: 15px;
+  font-weight: lighter;
+  color: white;
+  font-family: "Helvetica";
+  display: block;
+  line-height: 32px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+
+.skills {
+  display: block;
+  background: var(--logoBlue);
+  padding-bottom: 50px;
+}
+
+.skills .section {
+  width: 100vw;
+}
+
+.skills h1 {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 100vw;
+  font-size: 1.5em;
+  padding: 10vh 0 0 0;
+  color: white;
+}
+
+.skills h2 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.skills h3 {
+  font-size: 1em;
+  text-align: center;
+  color:white;
+  font-weight: lighter;
+}
+
+.skills .skill {
+  margin-top: 8vh;
+}
+
+.experience .section .job h2 {
+  font-size: 1em;
+}
+
+
+.experience .section .job h3 {
+  font-size: 0.8em;
+}
+
+.experience .section .job {
+  padding-top: 20px;
+}
+
+.experience .section .job h4 {
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+* {
+   margin: 0px;
+   padding: 0px;
 }
 
 /** ------------------- Introduction ------------------- **/
@@ -17,36 +212,36 @@
 }
 
 .intro h1 {
-  text-align: left;
-  padding-top: 30vh;
+  text-align: center;
+  padding-top: 35vh;
   letter-spacing: 0px;
   color: #1E1E1E;
   font-size: calc(4vw + 2vh + 2vmin);
   font-family: "Tahoma";
-  margin-left: 18vw;
+  transition: .5s;
+
 }
 
 .intro h2 {
-  text-align: left;
-  padding-top: 2vh;
+  text-align: center;
+  margin-top: 5vh;
   color: #1E1E1E;
   font-size: calc(0.5vw + 0.5vh + 1vmin);
   font-weight: bolder;
   font-family: "Tahoma";
   line-height: 3.5vh;
-  margin-left: 18vw;
+  transition: .5s;
 }
 
 .intro h3 {
-  text-align: left;
+  text-align: center;
   padding-top: 1vh;
   color: #1E1E1E;
   font-size: calc(0.5vw + 0.5vh + 0.8vmin);
   font-weight: lighter;
   font-family: "Tahoma";
   line-height: 3.5vh;
-  margin-left: 18vw;
-
+  transition: .5s;
 }
 
 .intro img {
@@ -56,64 +251,10 @@
   border-radius: 1000px;
   index: 10;
   position: relative;
+  transition: .5s;
   margin-left: 65vw;
   bottom: 36vh;
   box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);  */
-}
-
-/** ------------------- Top Bar ------------------- **/
-
-.bar {
-  top: 0.5vw;
-  height: 50px;
-  width: 50vw;
-  margin: 0px 25vw;
-  background-color: #F9F9F9;
-  z-index: 10;
-  border-radius: 10px;
-  position: fixed;
-  display: flex;
-  box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);  */
-
-  /* top: 1vw;
-  height: 50px;
-  /* margin: 5px auto;
-  left: 0;
-  right: 1vw;
-  width: 50vw;
-  background-color: #F9F9F9;
-  z-index: 10;
-  position: fixed;
-  border-radius: 10px;
-  display: flex;
-  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
-}
-
-.bar:hover {
-    -webkit-transform: scale(1.01);
-    transition: .2s;
-}
-
-.bar .item {
-  height: 30px;
-  width: 50px;
-  background-color: #F9F9F9;
-  display: inline-flex;
-  z-index: 15;
-  position: relative;
-  display: flex;
-  margin: auto;
-  cursor: pointer;
-}
-
-.bar .item:hover {
-  color: #4F85C5;
-  transition: .2s;
-}
-
-.bar .item p {
-  padding-top: 8px;
-  font-size: 10px;
 }
 
 /** ------------------- About ------------------- **/
@@ -122,7 +263,7 @@
   height: 100vh;
   min-height: 800px;
   width: 100vw;
-  background: linear-gradient(to right, #4F85C5 , #32C4E2);
+  background-color: var(--logoBlue);
   position: relative;
   right: 0;
   z-index: 5;
@@ -135,42 +276,33 @@
   height: 70%;
   margin-top: 25.5vh;
   display: flex;
+  transition: .5s;
 }
 
 .about h1 {
   padding: 20vh 5vw 10vh 2vw;
   margin: 10.5vh 0 0vh 4vw;
-  font-size: 17px;
+  font-size: 1.5em;
   font-weight: bold;
   color: white;
   font-family: "Tahoma";
   width: 24.5%;
   text-align: right;
+  transition: .5s;
+
 }
 
 .about .section p {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: lighter;
   color: white;
   font-family: "Helvetica";
   line-height: 30px;
-  margin: 4.5vh 0 0vh 0;
+  margin: 4vh 0 0vh 0;
   font-weight: 400;
-  width: 76%
+  width: 76%;
+  transition: .5s;
 }
-
-
-/*
-.about .arrow-down {
-  margin: 0 auto;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid white;
-} */
-
 
 /** ------------------- skills ------------------- **/
 
@@ -179,7 +311,7 @@
   height: 90vh;
   min-height: 600px;
   width: 100vw;
-  background: linear-gradient(to right, #C5634F , #C54F4F);
+  background-color: var(--logoBlue);
   position: relative;
   right: 0;
   z-index: 5;
@@ -189,22 +321,22 @@
 
 .skills h1 {
   padding: 15vh 5vw 0 2vw;
-  font-size: 17px;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: "Tahoma";
   width: 25%;
   text-align: right;
   margin: 10.5vh 0 0vh 4vw;
   color: white;
+  transition: .5s;
 }
 
 
-/** ------------------- experience ------------------- **/
+/** -------------------------------------- EXPERIENCE -------------------------------------- **/
 
 
 .experience {
-  height: 100vh;
-  padding-top: 0px;
+  margin-bottom: 50px;
   min-height: 600px;
   width: 100vw;
   position: relative;
@@ -216,10 +348,10 @@
 .experience h1 {
   padding: 15vh 5vw 10vh 2vw;
   margin: 10.5vh 0 0vh 4vw;
-  font-size: 17px;
+  font-size: 1.5em;
   font-weight: bold;
   color: black;
-  font-family: "Tahoma";
+  transition: .5s;
   width: 24.5%;
   text-align: right;
 }
@@ -227,9 +359,10 @@
 .experience .section {
   width: 60%;
   height: 70%;
-  margin-top: 24.5vh;
+  margin-top: 24.1vh;
   display: flex;
   flex-direction: column;
+  transition: .5s;
 }
 
 .experience .section .job:hover {
@@ -244,29 +377,30 @@
 }
 
 .experience .section .job h2 {
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: left;
   display: inline;
-
+  color: black;
 }
 
 .experience .section .job h3 {
-  font-size: 14px;
+  font-size: 0.8em;
   margin-bottom: 76px;
   font-weight: 100;
   text-align: left;
-
+  color: black;
 }
 
 .experience .section .job h4 {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 0.8em;
   text-align: right;
   margin-top: -110px;
+  color: black;
 }
 
 
-/** ------------------- Skills ------------------- **/
+/** -------------------------------------- SKILLS -------------------------------------- **/
 
 .skills {
   height: 100vh;
@@ -282,7 +416,7 @@
 .skills h1 {
   padding: 9vh 5vw 10vh 2vw;
   margin: 10.5vh 0 0vh 4vw;
-  font-size: 17px;
+  font-size: 1.5em;
   font-weight: bold;
   color: white;
   width: 24.5%;
@@ -305,10 +439,9 @@
 }
 
 .skills .section .skill h2 {
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: left;
   display: inline;
-
 }
 
 .skills .section .skill h3 {
@@ -316,7 +449,6 @@
   padding-bottom: 76px;
   font-weight: 100;
   text-align: left;
-
 }
 
 .skills .section .skill h4 {

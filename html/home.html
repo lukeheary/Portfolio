@@ -4,29 +4,37 @@
   <meta charset="utf-8">
   <title>Luke Heary</title>
   <link href="../css/home.css" type="text/css" rel="stylesheet">
-  <link href="../css/mobilehome.css" type="text/css" rel="stylesheet">
+  <link href="../css/navbar.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 <body>
 
 
+<div class="topnav" id="myTopnav">
+  <p></p>
+  <a href="../resources/resume.pdf" target="_blank">Resume</a>
+  <a href="https://www.github.com/lukeheary" target="_blank">Github</a>
+  <a href="https://www.linkedin.com/in/lukeheary" target="_blank">LinkedIn</a>
+  <a href="https://www.facebook.com/lukeheary" target="_blank">Facebook</a>
+  <a href="mailto:lukeheary@gmail.com">Email</a>
 
-  <style>
-
-  .intro h1, .intro h2, .intro h3 {
-
-    position: relative;
-    -webkit-animation-name: name; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-  }
-
-  @-webkit-keyframes name {
-      0%   {color: black; right: 800px;}
-      70%  {right: 0px;}
-      100%  {color: black; top:0px; font-size;}
-  }
-
-  </style>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 
 
@@ -34,21 +42,8 @@
 
     <h1> Luke Heary </h1>
     <h2> Computer Science Major  </h2>
-    <h3> Available for co-op during the Summer of 2019 <br> and full-time after Fall of 2019 </h3>
-    <img src="../images/luke.jpg">
-
-
-
+    <h3> Interning at IBM this upcoming summer <br> and available full-time after Fall of 2019 </h3>
   </div>
-
-  <div class = "bar">
-      <div class = "item"> <p> Resume </p> </div>
-      <div class = "item"> <p> Github </p></div>
-      <div class = "item"> <p> LinkedIn </p></div>
-      <div class = "item"> <p> Facebook </p></div>
-      <div class = "item"> <p> Email </p></div>
-  </div>
-
 
 
   <div class="about">
@@ -63,8 +58,9 @@
 
               During the past two years, I have completed two Software Engineering internships. The first was a four
               month internship at a digital advertising company in Manhattan, New York, and the second was an eight
-              month internship at a predictive data science company in Buffalo, New York. I am currently looking for
-              my third and final internship, and am intending to graduate after the Fall of 2019.
+              month internship at a predictive data science company in Buffalo, New York. I will be interning as a
+              Software Developer at IBM this upcoming summer, and I am intending to graduate after the Fall
+               of 2019 and will be looking for full-time.
             </p>
 
     </div>
@@ -77,6 +73,12 @@
     <div class = "section">
 
           <div class = "job">
+            <h2> Orientation Leadership Team </h2>
+            <h3> at the Rochester Institute of Technology </h3>
+            <h4> Nov 2018 - Present </h4>
+          </div>
+
+          <div class = "job">
             <h2> Orientation Supervisor </h2>
             <h3> at the Rochester Institute of Technology </h3>
             <h4> Mar 2018 - Aug 2018 </h4>
@@ -84,7 +86,7 @@
 
           <div class = "job">
             <h2> Software Engineering Intern </h2>
-            <h3> TROVE Predictive Data Science </h3>
+            <h3> at TROVE Predictive Data Science </h3>
             <h4> Jan 2018 - Aug 2018 </h4>
           </div>
 
@@ -122,7 +124,7 @@
 
           <div class = "skill">
             <h2> Most Experience </h2>
-            <h3> Java, Spring Framework, C, Python, HTML, CSS </h3>
+            <h3> Java, Spring Framework, Python, <br> C, HTML, CSS </h3>
           </div>
 
           <div class = "skill">
@@ -147,7 +149,5 @@
 
     </div>
   </div>
-
-
 
 </body>
