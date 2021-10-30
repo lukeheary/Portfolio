@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@700;800&display=swap');
+
+body, html {
+    margin: 0;
+}
+
+:root {
+    /* --mainBlue: #0F496F; */
+    --mainBlue: #002944;
+    --mainGrey: #E2E2E2;
+    --fullwidth: 100%;
+
+    --grayBlue: #9AAEBB;
+    --lightBlue: #B8CBD8;
+    --yellow: #E19F20;
+    --cream: #F1F1E6;
+    --greenish: #00536F;
+
+  }
