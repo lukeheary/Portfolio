@@ -1,59 +1,95 @@
 
-
-.introduction {
-    height: 90vh;
-    width: 100vw;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--mainBlue);
-
-    svg {
-        font-family: 'Georama', sans-serif;
-
-    }
-
-    h1 {
-        animation-name: h1animation;
-        animation-duration: 2s;
-        font-family: 'Georama', sans-serif;
-        color: var(--cream);
-        font-size: 100px;
-        padding-left: 20vw;
-
-        @keyframes h1animation {
-            0%   {opacity: 0;}
-            30%   {opacity: 0.8;}
-            100% {opacity: 1;}
+.container {
+    .introduction {
+        height: 95vh;
+        width: 100vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--mainBlue);
+    
+        h1 {
+            animation-name: h1animation;
+            animation-duration: 2s;
+            font-family: 'Georama', sans-serif;
+            color: var(--cream);
+            font-size: 100px;
+            padding-left: 20vw;
+            transition: 0.2s;
+    
+            @keyframes h1animation {
+                0%   {opacity: 0;}
+                30%   {opacity: 0.8;}
+                100% {opacity: 1;}
+            }
+        }
+    
+        h2 {
+            animation-name: title;
+            animation-duration: 1s;
+            margin-top: -80px;
+            font-family: 'Georama', sans-serif;
+            color: var(--cream);
+            font-size: 30px;
+            padding-left: 20vw;
+            letter-spacing: 1px;
+            transition: 0.2s;
+    
+            @keyframes title {
+                0%   {opacity: 0;}
+                50%   {opacity: 0;}
+                100% {opacity: 1;}
+            }
+        }
+    
+    
+        p {
+            margin: 0;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: black;
+            position: relative;
+            text-align: center;
         }
     }
 
-    h2 {
-        animation-name: title;
-        animation-duration: 1s;
-        margin-top: -80px;
-        font-family: 'Georama', sans-serif;
-        color: var(--cream);
-        font-size: 30px;
-        padding-left: 20vw;
-        letter-spacing: 1px;
-
-        @keyframes title {
-            0%   {opacity: 0;}
-            50%   {opacity: 0;}
-            100% {opacity: 1;}
+     // TABLET
+    @media only screen and (max-width: 1100px) {
+        .introduction {
+            h1 {
+                padding-left: 15vw;
+                transition: 0.2s;
+                font-size: 80px;
+            }
+        
+            h2 {
+                margin-top: -65px;
+                padding-left: 15vw;
+                letter-spacing: 1px;
+                transition: 0.2s;
+                font-size: 25px;
+            }
         }
     }
 
-
-    p {
-        margin: 0;
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 800;
-        color: black;
-        position: relative;
-        text-align: center;
+    // MOBILE
+    @media only screen and (max-width: 750px) {
+        .introduction {
+            h1 {
+                font-size: 11vw;
+                padding-left: 10vw;
+                transition: 0.2s;
+            }
+        
+            h2 {
+                font-size: 5vw;
+                margin-top: -7%;
+                padding-left: 10vw;
+                letter-spacing: 1px;
+                transition: 0.2s;
+            }
+        }
     }
 }

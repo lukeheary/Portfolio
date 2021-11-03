@@ -7,14 +7,15 @@ body, html {
 
 :root {
     /* --mainBlue: #0F496F; */
-    --mainBlue: #002944;
-    --mainGrey: #E2E2E2;
+    --mainBlue: rgb(235, 235, 222);
+    --mainGrey: #000000;
     --fullwidth: 100%;
 
     --grayBlue: #9AAEBB;
-    --lightBlue: #B8CBD8;
-    --yellow: #E19F20;
-    --cream: #F1F1E6;
+    --lightBlue: #c7ddeb;
+    --yellow: #EE982B;
+    --cream: #002944;
     --greenish: #00536F;
+    --green: #00914d;
 
   }

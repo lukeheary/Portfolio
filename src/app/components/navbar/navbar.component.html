@@ -3,10 +3,23 @@
 
     <div id = "navbar">
 
-        <svg height="65" width="80">
-            <circle cx="50" cy="33" r="20" stroke="var(--cream)" stroke-width="4" fill="none" />
+        <svg id = 'logo' height="65" width="80" (click) = 'scrollToTopOfPage()'>
+            <circle id = 'logo-circle' cx="50" cy="33" r="20" stroke="var(--cream)" stroke-width="3" fill="none" />
             <text x="39.5" y="40" fill="var(--cream)" font-size="19" letter-spacing="-2.5">LH</text>
         </svg>
+
+        <div id = 'menuIcon' (click) = 'openMobileNavbarMenu()'>
+            <div id = 'line1' class = 'menu-bar'></div>
+            <div id = 'line2' class = 'menu-bar'></div>
+            <div id = 'line3' class = 'menu-bar'></div>
+        </div>
+
+        <div id = 'mobileMenu'>
+            <div class = 'item'> <a href = ""> Resumé </a> </div>
+            <div class = 'item'> <a href = ""> LinkedIn </a> </div>
+            <div class = 'item'> <a href = ""> Github </a> </div>
+            <div class = 'item'> <a href = ""> Email </a> </div>
+        </div>
         
         <div class = 'item-container'>
             <div class = 'item'> <a href = ""> Resumé </a> </div>
@@ -18,5 +31,3 @@
     </div>
 
 </div>
-
-<script> </script>
