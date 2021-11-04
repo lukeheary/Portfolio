@@ -1,39 +1,169 @@
 
 .container {
-    height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--lightYellow);
+    padding-bottom: 10vh;
 
     h1 {
-        padding-left: 5vw;
-        padding-top: 5vh;
+        padding-left: 9vw;
+        padding-top: 10vh;
         margin: 0;
-        color: var(--mainBlue);
+        color: var(--lightNavy);
         font-family: 'Georama', sans-serif;
-        // transform: rotate(-3deg);   
+        font-size: 100px;
+        margin-bottom: -30px;
+        transition: 0.5s;
     }
 
-    h2 {
-        margin-left: 5vw;
-        color: var(--mainBlue);
-        font-family: 'Georama', sans-serif;
+    .work-experience-container:hover {
+        transition: 0.5s;
+    }
+ 
+    .work-experience-container {
+        background-color: var(--lightRed);
+        width: 84vw;
+        margin-left: 8vw;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+        
+        .job {
+            padding-bottom: 4vh;
+            background-color: var(--lightYellow);
+            max-width: 38vw;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+            margin-bottom: 4vh;
+
+            h2 {
+                margin-top: 6vh;
+                color: var(--Navy);
+                font-family: 'Georama', sans-serif;
+                text-align: center;
+            }
+
+            h3 {
+                margin-top: -20px;
+                color: var(--gray);
+                font-family: 'Georama', sans-serif;
+                text-align: center;
+                font-size: 13px;
+                padding-bottom: 10px;
+            }
+            
+            .description {
+                
+                li {
+                    list-style: none;
+                    padding-bottom: 15px;
+                    text-indent: -1.4em;
+                    margin-left: 5vw;
+                    margin-right: 3vw;
+
+                  }
+                  
+                  li::before {
+                    content: '▶';
+                    font-size: 10px;
+                    padding-right: 15px;
+                  }
+
+                p {
+                    color: var(--Navy);
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 30px;
+                    font-size: 17px;
+                }
+            }
+        }
     }
 
-    // animation-name: ani;
-    // animation-duration: 4s;
-    @keyframes ani {
-        0%   {opacity: 0;}
-        50%   {opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    // TABLET 
+    // TABLET
     @media only screen and (max-width: 1100px) {
 
+        h1 {
+            font-size: 80px;
+            padding-left: 7vw;
+        }
+        
+        .work-experience-container {
+            padding-bottom: 2vh;
+            margin-left: 5vw;
+            width: 90vw;
+
+            .job {
+                display: block;
+                max-width: 78vw;
+                padding-bottom: 3vh;
+
+                h2 {
+                    margin-top: 3vh;
+                    margin-left: 0vw;
+                }
+
+                .description {
+
+                    p {
+                        margin-left: 3vw;
+                        margin-right: 3vw;
+                    }
+                }
+            }
+        }
     }
 
     // MOBILE
     @media only screen and (max-width: 750px) {
 
+        h1 {
+            font-size: 60px;
+            margin-bottom: -20px;
+        }
+
+        .work-experience-container {
+    
+            .job {
+                width: 90vw;
+    
+                h2 {
+                    padding-top: 5vh;
+                    margin-left: 0vw;
+                }
+
+                h2 {
+                    padding-top: 0vh;
+                    margin-left: 0vw;
+                }
+
+                .description {
+                    p {
+                        margin-left: 5vw;
+                        margin-right: 5vw;
+                        color: var(--Navy);
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 30px;
+                    }
+                }
+
+                .image {
+                    width: 90vw;
+
+                    img {
+                        height: 350px;
+                        display: block;
+                        margin:auto;
+                        transform: rotate(4deg);   
+                        transition: 0.5s;     
+                        z-index: 0;    
+                        margin-top:30px;       
+                    }
+                }
+            }
+        }
     }
 }

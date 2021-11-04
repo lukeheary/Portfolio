@@ -3,19 +3,25 @@
 
 body, html {
     margin: 0;
+    scroll-behavior: smooth
 }
 
 :root {
-    /* --mainBlue: #0F496F; */
-    --mainBlue: rgb(235, 235, 222);
-    --mainGrey: #000000;
-    --fullwidth: 100%;
+    /* --lightYellow: rgb(235, 235, 222);
+    --lightGreen: #BFC9BC;
+    --lightBlue: #BCC8C9;
+    --lightNavy: #2F4858;
+    --Navy: #002944;
+    --lightRed: #EACEC2; */
 
-    --grayBlue: #9AAEBB;
-    --lightBlue: #c7ddeb;
-    --yellow: #EE982B;
-    --cream: #002944;
-    --greenish: #00536F;
-    --green: #00914d;
+
+    --lightYellow: white;
+    --Navy: #000000;
+    --gray: #6d6d6d;
+    --lightNavy: #000000;
+    --lightBlue: #CCE3EC;
+    --lightGreen: #CCECDC;
+    --lightRed: #ECCCCC;
+
 
   }

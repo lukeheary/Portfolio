@@ -53,40 +53,51 @@ export class NavbarComponent implements OnInit {
     
   }
 
-  openMobileNavbarMenu() {
+  closeMenu() {
     let mobileMenu = document.getElementById('mobileMenu');
     let line1 = document.getElementById('line1')
     let line2 = document.getElementById('line2')
     let line3 = document.getElementById('line3')
 
+    mobileMenu!.style.top = '-92vh';
+    this.mobileMenuOn = false;
+    this.allowNavbarScroll = true;
+
+    line1!.style.transform = 'rotate(0deg)'
+    line1!.style.top = '0px'
+    line2!.style.display = 'block'
+    line3!.style.transform = 'rotate(0deg)'
+    line1!.style.width = '25px'
+    line3!.style.width = '25px'
+  }
+
+  openMenu() {
+    let mobileMenu = document.getElementById('mobileMenu');
+    let line1 = document.getElementById('line1')
+    let line2 = document.getElementById('line2')
+    let line3 = document.getElementById('line3')
+
+    mobileMenu!.style.top = '10vh';
+    this.mobileMenuOn = true;
+    this.allowNavbarScroll = false;
+
+    line1!.style.transform = 'rotate(45deg)'
+    line1!.style.top = '9px'
+    line2!.style.display = 'none'
+    line3!.style.transform = 'rotate(-45deg)'
+    line1!.style.width = '30px'
+    line3!.style.width = '30px'
+  }
+
+  openMobileNavbarMenu() {
     if(this.mobileMenuOn) {
-      mobileMenu!.style.top = '-92vh';
-      this.mobileMenuOn = false;
-      this.allowNavbarScroll = true;
-
-      line1!.style.transform = 'rotate(0deg)'
-      line1!.style.top = '0px'
-      line2!.style.display = 'block'
-      line3!.style.transform = 'rotate(0deg)'
-      line1!.style.width = '25px'
-      line3!.style.width = '25px'
-
+      this.closeMenu();
     } else {
-      mobileMenu!.style.top = '10vh';
-      this.mobileMenuOn = true;
-      this.allowNavbarScroll = false;
-
-      line1!.style.transform = 'rotate(45deg)'
-      line1!.style.top = '9px'
-      line2!.style.display = 'none'
-      line3!.style.transform = 'rotate(-45deg)'
-      line1!.style.width = '30px'
-      line3!.style.width = '30px'
+      this.openMenu();
     }
   }
 
   scrollToTopOfPage() {
     window.scrollTo({top: 0, behavior: 'smooth'});
-
   }
 }
