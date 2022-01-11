@@ -18,10 +18,15 @@ body, html {
     --lightYellow: white;
     --Navy: #000000;
     --gray: #6d6d6d;
+    --lightGray: #ececec;
     --lightNavy: #000000;
-    --lightBlue: #CCE3EC;
-    --lightGreen: #CCECDC;
-    --lightRed: #ECCCCC;
+    --brightBlue: #F58549;
+    --goodNavy: #005697;
+
+    --lightGreen: #EEC170;
+    --lightRed: #6d673d;
+    --lightBlue: #79d7ff;
+    --lightOrange: #772F1A;
 
 
   }

@@ -2,15 +2,15 @@
 .container {
     width: 100vw;
     background-color: var(--lightYellow);
-    padding-bottom: 10vh;
+    padding-bottom: 3vh;
 
     h1 {
-        padding-left: 9vw;
+        padding-left: 8vw;
         padding-top: 10vh;
         margin: 0;
         color: var(--lightNavy);
         font-family: 'Georama', sans-serif;
-        font-size: 100px;
+        font-size: 90px;
         margin-bottom: -30px;
         transition: 0.5s;
     }
@@ -18,26 +18,32 @@
     .work-experience-container:hover {
         transition: 0.5s;
     }
- 
+
     .work-experience-container {
         background-color: var(--lightRed);
-        width: 84vw;
-        margin-left: 8vw;
+        width: 88vw;
+        margin-left: 6vw;
         padding-top: 5vh;
         padding-bottom: 2vh;
         border-radius: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
-        
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+        0 2px 2px rgba(0,0,0,0.15), 
+        0 4px 4px rgba(0,0,0,0.15), 
+        0 8px 8px rgba(0,0,0,0.15);
+  
         .job {
             padding-bottom: 4vh;
             background-color: var(--lightYellow);
-            max-width: 38vw;
+            max-width: 41vw;
             border-radius: 20px;
             transition: 0.5s;
-            box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+            box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+            0 2px 2px rgba(0,0,0,0.15), 
+            0 4px 4px rgba(0,0,0,0.15), 
+            0 8px 8px rgba(0,0,0,0.15);
             margin-bottom: 4vh;
 
             h2 {
@@ -45,6 +51,7 @@
                 color: var(--Navy);
                 font-family: 'Georama', sans-serif;
                 text-align: center;
+                font-size: 30px;
             }
 
             h3 {
@@ -57,27 +64,14 @@
             }
             
             .description {
-                
-                li {
-                    list-style: none;
-                    padding-bottom: 15px;
-                    text-indent: -1.4em;
-                    margin-left: 5vw;
-                    margin-right: 3vw;
-
-                  }
-                  
-                  li::before {
-                    content: '▶';
-                    font-size: 10px;
-                    padding-right: 15px;
-                  }
 
                 p {
                     color: var(--Navy);
                     font-family: Arial, Helvetica, sans-serif;
                     line-height: 30px;
-                    font-size: 17px;
+                    font-size: 15px;
+                    margin-left: 3vw;
+                    margin-right: 3vw;
                 }
             }
         }
@@ -85,6 +79,8 @@
 
     // TABLET
     @media only screen and (max-width: 1100px) {
+
+        padding-bottom: 4vh;
 
         h1 {
             font-size: 80px;
@@ -98,8 +94,9 @@
 
             .job {
                 display: block;
-                max-width: 78vw;
-                padding-bottom: 3vh;
+                max-width: 84vw;
+                padding-top: 0;
+                padding-bottom: 0vh;
 
                 h2 {
                     margin-top: 3vh;
@@ -108,7 +105,12 @@
 
                 .description {
 
+                    li {
+                        text-indent: -1.7em;
+                    }
+
                     p {
+                        line-height: 24px;
                         margin-left: 3vw;
                         margin-right: 3vw;
                     }
@@ -141,26 +143,13 @@
                 }
 
                 .description {
+
                     p {
                         margin-left: 5vw;
                         margin-right: 5vw;
                         color: var(--Navy);
                         font-family: Arial, Helvetica, sans-serif;
                         line-height: 30px;
-                    }
-                }
-
-                .image {
-                    width: 90vw;
-
-                    img {
-                        height: 350px;
-                        display: block;
-                        margin:auto;
-                        transform: rotate(4deg);   
-                        transition: 0.5s;     
-                        z-index: 0;    
-                        margin-top:30px;       
                     }
                 }
             }

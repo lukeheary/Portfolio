@@ -5,12 +5,12 @@
     padding-bottom: 10vh;
 
     h1 {
-        padding-left: 12vw;
+        padding-left: 8vw;
         padding-top: 10vh;
         margin: 0;
         color: var(--lightNavy);
         font-family: 'Georama', sans-serif;
-        font-size: 100px;
+        font-size: 90px;
         margin-bottom: -30px;
         transition: 0.5s;
     }
@@ -22,11 +22,14 @@
     .projects {
         padding-bottom: 5vh;
         background-color: var(--lightBlue);
-        width: 70vw;
-        margin-left: 10vw;
+        width: 88vw;
+        margin-left: 6vw;
         border-radius: 20px;
         transition: 0.5s;
-        box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+        0 2px 2px rgba(0,0,0,0.15), 
+        0 4px 4px rgba(0,0,0,0.15), 
+        0 8px 8px rgba(0,0,0,0.15);
 
         .project {
             display: flex;
@@ -54,7 +57,7 @@
     
             .image {
                 width: 25vw;
-                margin-right: -10vw;
+                margin-right: 5vw;
     
                 img {
                     height: 550px;
@@ -85,12 +88,11 @@
         }
         
         .projects {
-            padding-bottom: 10vh;
-            width: 90vw;
+            padding-bottom: 5vh;
+            width: 80vw;
             margin-left: 5vw;
     
             .project {
-                display: block;
 
                 h2 {
                     margin-top: 0vh;
@@ -101,24 +103,14 @@
                 .description {
                     p {
                         margin-left: 0vw;
-                        margin-right: 10vw;
+                        margin-right: 5vw;
                         color: var(--Navy);
                         font-family: Arial, Helvetica, sans-serif;
                         line-height: 30px;
                     }
                 }
-
-                .description {
-                    width: 90vw;
-
-                    p {
-                        margin-left: 0vw;
-                        margin-right: 10vw;
-                    }
-                }
         
                 .image {
-                    width: 90vw;
 
                     img {
                         height: 450px;
@@ -127,7 +119,8 @@
                         transform: rotate(4deg);   
                         transition: 0.5s;     
                         z-index: 0;    
-                        margin-top:50px;       
+                        margin-top:100px;  
+                        margin-right: 10vw;     
                     }
                 }
             }
@@ -143,8 +136,11 @@
         }
 
         .projects {
+            width: 90vw;
     
             .project {
+                display: block;
+
 
                 h2 {
                     padding-top: 5vh;
@@ -152,6 +148,8 @@
                 }
 
                 .description {
+                    width: 90vw;
+
                     p {
                         margin-left: 0vw;
                         margin-right: 10vw;
@@ -160,19 +158,47 @@
                         line-height: 30px;
                     }
                 }
+                
+                .project-button:hover {
+                    transition: 0.4s;
+                    background-color: var(--lightGray);
+                    cursor: pointer;
+                }
+
+                .project-button {
+                    width: 40vw;
+                    height: 6vh;
+                    background-color: white;
+                    margin: auto;
+                    border-radius: 15px;
+                    text-align: center;
+                    line-height: 6vh;
+                    margin-top: 50px;
+                    box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+
+                    a {
+                        margin: auto;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 500;
+                        color: black;
+                    }
+                }
 
                 .image {
                     width: 90vw;
 
                     img {
                         height: 350px;
-                        display: block;
+                        display: none;
                         margin:auto;
                         transform: rotate(4deg);   
                         transition: 0.5s;     
                         z-index: 0;    
                         margin-top:30px;       
                     }
+
+
                 }
             }
         }
